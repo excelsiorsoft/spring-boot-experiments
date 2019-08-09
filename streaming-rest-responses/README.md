@@ -7,7 +7,7 @@ Ensure the following folder structure exists locally (in user.home directory):
 
 Start the server:
 
-![README1]([https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/streaming-rest-responses/README_images/README1.png
+![README1](https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/streaming-rest-responses/README_images/README1.png
 
 Hit the `api/download endpoint, credentials are admin/admin:
 
