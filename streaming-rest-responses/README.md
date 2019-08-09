@@ -9,7 +9,7 @@ Start the server:
 
 ![README1](https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/streaming-rest-responses/README_images/README1.png)
 
-Hit the `api/download endpoint, credentials are **admin/admin**:
+Hit the `api/download` endpoint, credentials are **admin/admin**:
 
 ![README2](https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/streaming-rest-responses/README_images/README2.png)
 
