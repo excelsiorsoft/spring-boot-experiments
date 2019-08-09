@@ -21,7 +21,7 @@ public class DownloadController {
 
     private final Logger logger = LoggerFactory.getLogger(DownloadController.class);
 
-    @GetMapping (value = "/download", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping (value = "/download"/*, produces = MediaType.APPLICATION_JSON_VALUE*/)
     public ResponseEntity<StreamingResponseBody> download(final HttpServletResponse response) {
 
         response.setContentType("application/zip");
@@ -29,7 +29,7 @@ public class DownloadController {
                 "Content-Disposition",
                 "attachment;filename=sample.zip");
 
-        StreamingResponseBody stream = out -> {
+        StreamingResponseBody stream = outputStream -> {
 
             final String home = System.getProperty("user.home");
             final File directory = new File(home + File.separator + "Documents" + File.separator + "samples");
@@ -38,10 +38,10 @@ public class DownloadController {
             if(directory.exists() && directory.isDirectory()) {
                 try {
                     for (final File file : directory.listFiles()) {
-                        final InputStream inputStream=new FileInputStream(file);
-                        final ZipEntry zipEntry=new ZipEntry(file.getName());
+                        final InputStream inputStream = new FileInputStream(file);
+                        final ZipEntry zipEntry = new ZipEntry(file.getName());
                         zipOut.putNextEntry(zipEntry);
-                        byte[] bytes=new byte[1024];
+                        byte[] bytes = new byte[1024];
                         int length;
                         while ((length=inputStream.read(bytes)) >= 0) {
                             zipOut.write(bytes, 0, length);
@@ -55,6 +55,6 @@ public class DownloadController {
             }
         };
         logger.info("steaming response {} ", stream);
-        return new ResponseEntity(stream, HttpStatus.OK);
+        return new ResponseEntity<StreamingResponseBody>(stream, HttpStatus.OK);
     }
 }

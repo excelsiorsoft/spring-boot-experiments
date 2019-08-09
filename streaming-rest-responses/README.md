@@ -1,4 +1,4 @@
-# download-using-streaming-response-body
+# Download using StreamingResponseBody
 An example for streaming large files in chunks using StreamingResponseBody in Spring MVC
 
 Ensure the following folder structure exists locally (in user.home directory):  
