@@ -13,7 +13,7 @@ Hit the `api/download endpoint, credentials are **admin/admin**:
 
 ![README2](https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/streaming-rest-responses/README_images/README2.png)
 
-Credentials are configured in `application.yml:
+Credentials are configured in `application.yml`:
 
 ![README4](https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/streaming-rest-responses/README_images/README4.png)
 
