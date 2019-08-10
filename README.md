@@ -1,6 +1,6 @@
 # spring-boot-experiments
 
-This is a collection of various Spring-Boot-related experiments and/or PoCs.
+This is a collection of various Spring-Boot-related experiments and/or PoCs. 
 
 
 
