@@ -24,7 +24,14 @@ public class PaymentInstructionSerDeserTest {
 	@Test
 	public void deserialization() throws Exception {
 		PaymentInstruction pi = new PaymentInstruction();
-		Deal deal = new Deal();
+		Deal deal = Deal.builder()
+				.acsKey("acsKey")
+				.acsDealId("acsDealId")
+				.dealShortName("dealShortName")
+				.legalEntityId("legalEntityId")
+				.clientId("clientId")
+				.clientName("clientName")
+				.build();
 		pi.setDealAttributes(deal);
 			log.debug(objectMapper.writeValueAsString(pi));
 	}

@@ -39,32 +39,21 @@ public class TestController {
     public ResponseEntity<StreamingResponseBody> serializePmtInstr() throws Exception {
 		
 		PaymentInstruction pi = new PaymentInstruction();
-		Deal deal = new Deal();
+		Deal deal = Deal.builder()
+				.acsKey("acsKey")
+				.acsDealId("acsDealId")
+				.dealShortName("dealShortName")
+				.legalEntityId("legalEntityId")
+				.clientId("clientId")
+				.clientName("clientName")
+				.build();
 		pi.setDealAttributes(deal);
 		log.info(objectMapper.writeValueAsString(pi));
 			
 		
 		return null;}
 	
-	@PostMapping (value = "/test2")
-    public ResponseEntity<StreamingResponseBody> test2(@RequestBody PaymentInstruction payload) throws Exception {
-		
-		PaymentInstruction pi = new PaymentInstruction();
-		Deal deal = new Deal();
-		pi.setDealAttributes(deal);
-			log.debug(objectMapper.writeValueAsString(pi));
-			
-		log.info("{}",payload);
-		return null;}
-	
 
-	
-	public void deserialization() throws Exception {
-		PaymentInstruction pi = new PaymentInstruction();
-		Deal deal = new Deal();
-		pi.setDealAttributes(deal);
-			log.debug(objectMapper.writeValueAsString(pi));
-	}
 	
 	
 }
