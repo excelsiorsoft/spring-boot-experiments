@@ -19,5 +19,5 @@ Feel free to create new and modify existing files. You can add some new dependen
 
 Please follow conventions used in this project.
 
-<object data="README.PNG" type="image/png" width="700px" height="700px"/>
+<object data="https://github.com/excelsiorsoft/spring-boot-experiments/blob/master/clevertech/README.PNG" type="image/png" width="700px" height="700px"/>
     
