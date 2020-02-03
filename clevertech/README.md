@@ -19,5 +19,6 @@ Feel free to create new and modify existing files. You can add some new dependen
 
 Please follow conventions used in this project.
 
-<object data="README.PNG" type="image/png" width="700px" height="700px"/>
-    
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=readme.pdf" width="800" height="800">
+
