@@ -19,8 +19,5 @@ Feel free to create new and modify existing files. You can add some new dependen
 
 Please follow conventions used in this project.
 
-<object data="README.PNG" type="image/png" width="700px" height="700px">
-    <embed src="README.pngf">
-        <p>This browser does not support PNG formats. Please download the PNG to view it: <a href="README.PNG">Download PNG</a>.</p>
-    </embed>
-</object>
+<object data="README.PNG" type="image/png" width="700px" height="700px"/>
+    
