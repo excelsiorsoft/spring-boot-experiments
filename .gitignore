@@ -19,6 +19,7 @@ target/
 *.lnk
 **/.sts4-cache/*
 **/target/*
+.factorypath
 
 
 
@@ -224,3 +225,5 @@ pip-log.txt
 *.wbk
 
 *.lnk
+
+clevertechCopy/
